@@ -4,11 +4,17 @@ export function Welcome() {
 //border 2px solid black, black
 
   return (
-    <main className="flex flex-col intems-center min-h-screen">
-      <div className="Topo-Colorido"></div>
-      <h1 className="text-center">Pokédex</h1>
-      <button className="border-2 bg-red-600 border-red-60 p-2">Home  Pokemon  Tipos </button>
-     <div className="red-sky-500/20"></div>
+    <main className="min-h-screen bg-linear-to-br from-orange-100 to-pink-200">
+      <div className="flex h-16 w-full intens-center bg linear-to-r/oklch from-red-600 to-orange-300" 
+
+       <h1 className="text-white p-3">Pokédex</h1>
+       <h1 className="text-white p1-315">Home</h1>
+       <h1 className="text-white p1-5">Pokémons</h1>
+       <h1 className="text-white p1-3">tipos</h1>
+     <div className="rounded"> 
+       <h1
+    
+    
     </main>
   );
 }
