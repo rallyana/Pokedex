@@ -1,58 +1,71 @@
 export function Welcome() {
   return (
-    <main className="min-h-screen flex flex-col justify-between from-orange-300 bg-pink-100 ">
+    <main className="min-h-screen flex flex-col bg-gradient-to-b from-orange-100 to-pink-100">
       
-      <nav className="bg-red-600 to-orange-300 p-7 flex items-center justify-between shadow-md">
-        <h1 className="text-white text-2xl font-bold">
-          Pokédex
+      <nav className="bg-red-600 p-5 flex items-center justify-between shadow-md">
+        <h1 className="text-white text-2xl font-bold tracking-wide">
+        Pokédex
         </h1>
 
-        <div className="flex gap-4">
-          <button className="text-white hover:underline">Home</button>
-          <button className="text-white hover:underline">Pokémons</button>
-          <button className="text-white hover:underline">Tipos</button>
+        <div className="flex gap-6">
+          <button className="text-white font-medium hover:underline">Home</button>
+          <button className="text-white font-medium hover:underline">Pokémons</button>
+          <button className="text-white font-medium hover:underline">Tipos</button>
         </div>
-
       </nav>
 
-
-        <div className="flex gap-2 mt-10">
+      <div className="flex-1 max-w-6xl w-full mx-auto px-4 py-8 flex flex-col gap-8">
+        
+        <div className="flex gap-2 max-w-md w-full mx-auto shadow-sm">
           <input
             type="text"
-            placeholder=""
-            className="w-full p-3 rounded-lg border  border-gray-300 shadow-sm focus:outline-none"
+            placeholder="Buscar Pokémon..."
+            className="w-full p-3 rounded-l-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-500 bg-white text-gray-800"
           />
-          <button className="bg-red-600 text-white px-8 py-2 rounded-lg font-semibold hover:bg-red-700 transition">
+          <button className="bg-red-600 text-white px-14 py-5 rounded-r-lg font-bold hover:bg-red-700 transition-colors">
             Buscar
           </button>
         </div> 
 
-      <div className="flex gap-5 p-2 justify-center">
-      <div className="h-45 w-70 aspect-square bg-yellow-300 text-white text-xs flex items-center justify-center rounded-md">
-        Pikachu
-    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center mt-4">
 
-    <div className="h-45 w-70 aspect-square bg-green-500 text-white text-xs flex items-center justify-center rounded-md">
-        Bulbasaur
-    </div>
+          <div className="w-full max-w-[200px] aspect-square bg-yellow-300 text-black flex flex-col items-center justify-center gap-3 rounded-xl shadow-md transform hover:scale-105 transition-transform p-4">
+            <span className="font-bold text-base">Pikachu</span>
+            <span className="bg-yellow-500/30 text-yellow-900 font-semibold px-3 py-1 rounded-full text-xs">
+              Elétrico
+            </span> 
+          </div>
 
-    <div className="h-45 w-70 aspect-square bg-red-400 text-white text-xs flex items-center justify-center rounded-md">
-        Charmander
-    </div>
+          <div className="w-full max-w-[200px] aspect-square bg-green-400 text-black flex flex-col items-center justify-center gap-3 rounded-xl shadow-md transform hover:scale-105 transition-transform p-4">
+            <span className="font-bold text-base">Bulbasaur</span>
+            <span className="bg-green-700/30 text-green-950 font-semibold px-3 py-1 rounded-full text-xs">
+              Planta
+            </span>
+          </div>
 
-    <div className="h-45 w-70 aspect-square bg-blue-300 text-white text-xs flex items-center justify-center rounded-md">
-        Squirtle
-    </div>
+          <div className="w-full max-w-[200px] aspect-square bg-red-400 text-black flex flex-col items-center justify-center gap-3 rounded-xl shadow-md transform hover:scale-105 transition-transform p-4">
+            <span className="font-bold text-base">Charmander</span>
+            <span className="bg-red-700/30 text-red-950 font-semibold px-3 py-1 rounded-full text-xs">
+              Fogo
+            </span>
+          </div>
+
+          <div className="w-full max-w-[200px] aspect-square bg-blue-300 text-black flex flex-col items-center justify-center gap-3 rounded-xl shadow-md transform hover:scale-105 transition-transform p-4">
+            <span className="font-bold text-base">Squirtle</span>
+            <span className="bg-blue-700/30 text-blue-950 font-semibold px-3 py-1 rounded-full text-xs">
+              Água
+            </span>
+          </div> 
+          
+        </div>
       </div>
-      
-
-      <div className="grow">
-
-      </div>
-
-      <footer className="bg-blue-950 p-4">
-        <p className="text-white text-center font-bold">Pokédex, React + Tailwind</p>
+  
+      <footer className="bg-blue-950 p-4 mt-auto">
+        <p className="text-white text-center text-sm font-medium">
+          Pokédex &copy; {new Date().getFullYear()} - React + Tailwind
+        </p>
       </footer>
+
     </main>
   );
 }
