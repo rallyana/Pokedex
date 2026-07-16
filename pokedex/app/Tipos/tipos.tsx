@@ -16,7 +16,7 @@ export function Tipos() {
         </nav>
 
         <div className="bg-red-300 h-34 m-10 flex flex-col items-center justify-center rounded-md shadow-md">
-          <span className="text-5x5 font-bold tracking-wider">Alguns Modelos de Pokémons</span>
+          <span className="text-5x5 font-bold tracking-wider">Tipos  de Pokémons</span>
           <span>Conheça Alguns tipos e suas Características.</span>
         </div>
 
